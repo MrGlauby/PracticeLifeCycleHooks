@@ -1,0 +1,65 @@
+<div>
+  <h2>Formular</h2>
+
+  <div>
+    <div class="form-container">
+      <div class="form-border">
+        <input
+          class="form-input"
+          [(ngModel)]="user.name"
+          type="text"
+          placeholder="Name"
+        />
+      </div>
+      <div class="form-border">
+        <input
+          class="form-input"
+          [(ngModel)]="user.age"
+          type="text"
+          placeholder="Age"
+        />
+      </div>
+      <div class="form-border">
+        <input
+          class="form-input"
+          [(ngModel)]="user.gender"
+          type="text"
+          placeholder="Gender"
+        />
+      </div>
+      <div class="form-border">
+        <input
+          class="form-input"
+          [(ngModel)]="user.address"
+          type="text"
+          placeholder="Address"
+        />
+      </div>
+    </div>
+    <br />
+    <br />
+    <button (click)="addUser()">
+      <!-- Der Button soll neuen User erstellen und gleichzeitig nach erstellen auf Dashboard weiterleiten! -->
+      <!-- Die daten sollen dann weitergeben werden! -->
+      <!-- überleg weiter wohin sie noch gehen könnten! -->
+      <a>Weiteren User hinzufügen!</a>
+    </button>
+
+    <div></div>
+
+    <ul>
+      <li *ngFor="let user of users">
+        <p>Name: {{ user.name }}</p>
+        <p>Age: {{ user.age }}</p>
+        <p>Gender: {{ user.gender }}</p>
+        <p>Address: {{ user.address }}</p>
+        <hr />
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Du musst nachvollziehen wie ngOninit, ngFor, subscribe und das Observable miteinander funktioniert! -->
+
+<!-- JUST for practice - Die erstellten User sollen auch auf der Home Seite angezeigt werden! -->
+<!-- // Erstell ein weiteres Formular im Dashboard was die neuen erstllten User anzeigt und diese User werden sollen noch woanders anzeigt werden! -->

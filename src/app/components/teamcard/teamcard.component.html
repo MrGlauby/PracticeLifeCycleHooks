@@ -1,0 +1,12 @@
+<p>teamcard works!</p>
+
+<div class="wrapper">
+  <div class="teamcard-container">
+    <h2>{{ team.teamname }}</h2>
+    <ul *ngFor="let player of players">
+      <li>{{ player.name }}</li>
+      <li>{{ player.shirtNumber }}</li>
+      <li>{{ player.position }}</li>
+    </ul>
+  </div>
+</div>

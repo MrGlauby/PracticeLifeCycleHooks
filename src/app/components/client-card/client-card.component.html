@@ -1,0 +1,22 @@
+<p>client-card works!</p>
+
+<div>
+  <div>
+    <h2>Alle Klienten</h2>
+  </div>
+
+  <div class="client-card" *ngFor="let client of clients">
+    <div>
+      <p>{{ client.name }}</p>
+      <p>{{ client.address }}</p>
+    </div>
+
+    <div>
+      <!-- Weiterleitung zum Client Detail -->
+      <a href="client-detail-page">
+        <button>Client Details</button>
+      </a>
+    </div>
+  </div>
+
+</div>
